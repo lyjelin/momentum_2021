@@ -1,20 +1,13 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+const player = {
+    name: "elin",
+    points: 10,
+    happy: true
+};
 
-const daysOfWeek = [mon, tue, wed, thu, fri, sat];
-
-const nonsense = [1, 2, "hello", false, null, true, undefined];
-
-// Print Array
-console.log(daysOfWeek);
-
-// Get Item from Array
-console.log(daysOfWeek[2])
-
-// Add one more day to the array
-daysOfWeek.push("sun");
+console.log(player.name);
+// is same as 
+console.log(plauer["name"]);
+// we can update the object variable
+player.points = player.points + 15;
+//we can even add new variable 
+player.major = "Computer Engineering";
