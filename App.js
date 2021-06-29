@@ -1,28 +1,26 @@
-function sayHello( nameOfPerson, age ) {
-    console.log("Hello my name is "+nameOfPerson+" and I am "+age+".");
+const age = 96;
+
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
 }
 
-sayHello("Elin", 22);
-sayHello("Dal", 23);
-sayHello("Lynn", 21);
+const krAge = calculateKrAge(age);
 
-function plus(a, b){
-    console.log(a+b);
-}
+console.log(krAge);
 
-plus(15, 13);
-
-function divide(a, b){
-    console.log(a/b);
-}
-
-divide(12, 2);
-
-const player = {
-    name: "Elin",
-    sayHello: function(personName){
-        console.log("Hello! "+personName + ". Nice to meet you!");
+const calculator = {
+    plus: function (a, b){
+        return a + b;
+    },
+    minus: function (a, b){
+        return a - b;
+    },
+    divide: function (a, b){
+        return a / b;
+    },
+    multiple: function (a, b) {
+        return a * b;
     },
 };
 
-player.sayHello("Lynn");
+const plusResult = calculator.plus(2, 3);
